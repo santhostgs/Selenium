@@ -12,7 +12,7 @@ pipeline {
           steps {
             echo 'hello'
             powershell(script: 'call http://10.51.23.244:8080/job/test/build?token=RUNROBOT1', returnStatus: true, returnStdout: true)
-            sh 'sh mvn -v'
+            sh 'mvn -v'
           }
         }
       }
