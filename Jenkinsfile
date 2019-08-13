@@ -11,7 +11,7 @@ pipeline {
         stage('Second') {
           steps {
             echo 'hello'
-            bat(script: 'curl http://10.51.23.244:8080/job/test/build?token=RUNROBOT1', returnStatus: true, returnStdout: true)
+            bat(script: 'call http://10.51.23.244:8080/job/test/build?token=RUNROBOT1 -method=get', returnStatus: true, returnStdout: true)
           }
         }
       }
