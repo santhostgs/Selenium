@@ -17,7 +17,7 @@ pipeline {
         }
       }
     }
-    stage('OtherMachine') {
+    stage('Test') {
       steps {
         node(label: 'GEN_125')
       }
