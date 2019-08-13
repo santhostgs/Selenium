@@ -11,6 +11,7 @@ pipeline {
         stage('Second') {
           steps {
             echo 'hello'
+            sh 'curl -ivs  http://10.51.23.244:8080/job/test/build?token=RUNROBOT1'
           }
         }
       }
