@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'My first job'
-        sleep 50
+        readFile 'index.html'
       }
     }
   }
