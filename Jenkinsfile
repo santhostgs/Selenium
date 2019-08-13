@@ -4,7 +4,6 @@ pipeline {
     stage('Build') {
       steps {
         echo 'My first job'
-        readFile 'workspaces.txt'
       }
     }
   }
