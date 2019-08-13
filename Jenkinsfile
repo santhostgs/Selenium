@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'My first job'
-        readFile 'index.html'
+        readFile 'workspace\\Selenium_master\\test-output\\index.html'
       }
     }
   }
